@@ -7,6 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Mukta:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
 <style>
   :root{
     --sandstone:#F1E6CC;
@@ -181,6 +182,31 @@
   footer ul a:hover{color:var(--gold-light);}
   .foot-bottom{border-top:1px solid rgba(199,154,61,.25);margin-top:48px;padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.78rem;color:#8a7a5e;}
 
+    .social-icons{
+    display:flex;
+    justify-content:center;   /* Center horizontally */
+    align-items:center;       /* Center vertically */
+    gap:7px;                  /* 7px space between icons */
+    margin-top:20px;
+}
+
+.social-icons a{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.social-icons img{
+    width:32px;
+    height:32px;
+    display:block;
+    transition:transform .3s ease;
+}
+
+.social-icons img:hover{
+    transform:scale(1.1);
+}
+
   .logo {
   border: 3px solid var(--maroon);
   border-radius: 50%;
@@ -195,6 +221,10 @@
   height: 100%;
   object-fit: contain;
   display: block;
+  }
+
+  .input-box{
+    background-color: var(--sandstone-2);border-radius: 5px;border: #2B1B12;
   }
 
   @media (max-width:960px){
@@ -221,8 +251,9 @@
 
 <div class="topbar">
   <div class="container">
-    <span>📞 +91 97660 89910 </span>
-    <span>ॐ सोमवार ते रविवार • सकाळी ९:०० ते संध्याकाळी ६:०० • नारायणगाव, पुणे</span>
+    <span style="color: #5C1A1A; background-color: #FFF3CD; padding: 2px 6px; border-radius: 4px;"">📞 ९७६६०८९९१० </span>
+    <span>आय-४०४, कुबेर आंगण,कोल्हे मळा, जुन्नर-ओझर रोड,नारायणगाव, ता. जुन्नर,जि. पुणे - ४१०५०४</span>
+    <span>दररोज • सकाळी ९:०० ते संध्याकाळी ६:००</span>
   </div>
 </div>
 
@@ -230,21 +261,21 @@
   <div class="container">
     <div class="logo_holder d-flex justify-content-center">
       <div class="logo">
-        <img src="logo.jpeg" alt="img_error">
+        <img src="img/logo.jpeg" alt="img_error" style="width: 100%; height: 100%; object-fit: cover;">
       </div>
     </div>
-    <div class="brand" style="padding-left: 40px;"><span class="om">ॐ</span> श्री. प्रशांत राक्षे गुरुजी – मुख्य पुरोहित व ज्योतिष मार्गदर्शक </div>
+    <div class="brand" style="padding-left: 40px;">वेदकार्य- प्रशांत राक्षे (गुरुजी)    </div>
     <nav class="navlinks">
-      <a href="#about"> मुख्यपान</a>
-      <a href="#gallery">आमच्याबद्दल</a>
-      <a href="#services">धार्मिक पूजाविधी</a>
-      <a href="#process">वैदिक ज्योतिष</a>
-      <a href="#testimonials">विशेष अनुष्ठान</a>
+      <a href="#about"> मुख्यपृष्ठ</a>
+      <a href="#gallery">आमच्याविषयी</a>
+      <a href="#services">पूजाविधी</a>
+      <a href="#process">ज्योतिष</a>
+      <a href="#testimonials">अनुष्ठान</a>
       <a href="#faq">गॅलरी</a>
-      <a href="#about"> ब्लॉग</a>
-      <a href="#gallery">सामान्य प्रश्न</a>
-      <a href="#services">दान व दक्षिणा</a>
-      <a href="#process">संपर्क व बुकिंग</a>
+      <a href="#about">ब्लॉग</a>
+      <a href="#gallery">प्रश्नोत्तरे</a>
+      <a href="#services">दान-दक्षिणा</a>
+      <a href="#process">संपर्क</a>
     </nav>
     <div style="display:flex;align-items:center;gap:18px;">
       <button class="menu-toggle" aria-label="menu">☰</button>
@@ -254,17 +285,17 @@
 
 <section class="hero">
   <div class="hero-bg">
-    <img src="bg.jpg" alt="Evening Ganga Aarti at the ghats of Varanasi">
+    <img src="img/bg.jpg" alt="Evening Ganga Aarti at the ghats of Varanasi">
   </div>
   <div class="container">
     <div class="hero-copy">
-      <span class="eyebrow" style="color:var(--gold-light)">वेदकार्य - परंपरा जपणारी सेवा</span>
-      <h1> श्रद्धा, संस्कार आणि  <em> शास्त्र </em> — एकाच ठिकाणी.</h1>
-      <p>वैदिक ज्योतिष, धार्मिक पूजाविधी, वास्तु मार्गदर्शन तसेच विविध धार्मिक सेवांसाठी शास्त्रोक्त, विश्वासार्ह आणि अनुभवी सेवा. प्रत्येक कार्यात योग्य मार्गदर्शन, स्पष्ट संवाद आणि ऑनलाइन तसेच प्रत्यक्ष सेवा उपलब्ध.</p>
+      <span class="eyebrow" style="color:var(--gold-light)">वेदकार्य • परंपरा जपणारी सेवा</span>
+      <h1>आपल्या प्रत्येक<em> शुभ कार्यासाठी</em> विश्वासार्ह वैदिक सेवा.</h1>
+      <p>आपल्या प्रश्नांसाठी अचूक ज्योतिष मार्गदर्शन व योग्य उपाय. प्रत्येक पूजाविधी शास्त्रोक्त पद्धतीने, भक्तिभावाने संपन्न. घरबसल्या व्हिडिओ कॉलद्वारे ऑनलाइन पूजाविधीची सुविधाही उपलब्ध.</p>
       <div class="stat-row">
         <div class="stat"><b>२१+</b><span>वर्षांचा अनुभव</span></div>
-        <div class="stat"><b>२०००+</b><span>शास्त्रोक्त पूजाविधी संपन्न</span></div>
-        <div class="stat"><b>१००+</b><span>पूजाविधी व ज्योतिष सेवा</span></div>
+        <div class="stat"><b>११००+</b><span>पूजाविधी संपन्न</span></div>
+        <div class="stat"><b>६००+</b><span>कुंडली मार्गदर्शन</span></div>
       </div>
     </div>
   </div>
@@ -274,19 +305,22 @@
   <div class="container">
     <div class="about-photo">
       <div class="frame">
-        <img src="img1.jpg" alt="Gopuram of the Meenakshi Amman Temple, Madurai">
+        <img src="img/img1.jpg" alt="Gopuram of the Meenakshi Amman Temple, Madurai">
       </div>
-      <div class="about-badge"><b>22+</b><span>Years Experience</span></div>
+      <div class="about-badge">
+    <b>२१+</b>
+    <span style="font-size: 0.9rem; font-weight: 600;">वर्षांचा अनुभव</span>
+</div>  
     </div>
     <div class="about-copy">
-      <span class="eyebrow">परिचय — आमची ओळख</span>
-      <h2 style="margin-top:14px;">अनुभवी वैदिक मार्गदर्शन, शास्त्रोक्त परंपरा आणि आधुनिक सेवेचा विश्वासार्ह संगम.</h2>
-      <p style="color:var(--mist);margin-top:16px;max-width:560px;">दोन दशकांहून अधिक काळ वैदिक ज्योतिष, शास्त्रोक्त पूजाविधी आणि धार्मिक मार्गदर्शन क्षेत्रात कार्यरत असलेल्या श्री. राक्षे गुरुजी यांच्या संकल्पनेतून 'वेदकार्य'ची निर्मिती झाली आहे. परंपरागत धार्मिक सेवांना तंत्रज्ञानाची जोड देत, प्रत्येक यजमानापर्यंत विश्वासार्ह, पारदर्शक आणि शास्त्रनिष्ठ सेवा सहजपणे पोहोचवणे, हेच वेदकार्यचे ध्येय आहे.</p>
+      <span class="eyebrow">परिचय</span>
+      <h2 style="margin-top:14px;">प्रामाणिक सेवा, हिच आमची ओळख.</h2>
+      <p style="color:var(--mist);margin-top:16px;max-width:560px;">वैदिक पंचांगाचा सखोल अभ्यास करून आपल्या धार्मिक कार्यासाठी योग्य दिवस, वेळ आणि मुहूर्त निश्चित केला जातो.</p>
       <div class="creds">
         <div class="cred"><div class="akshar">अ</div><div><h4>शास्त्रोक्त पूजाविधी</h4><p>प्रत्येक विधी वैदिक परंपरा, मंत्र आणि शास्त्रानुसार विधिवत संपन्न केला जातो.</p></div></div>
-        <div class="cred"><div class="akshar">आ</div><div><h4>२१+ वर्षांचा अनुभव</h4><p>दोन दशकांहून अधिक काळ शास्त्रोक्त धार्मिक सेवांचा अनुभव.</p></div></div>
+        <div class="cred"><div class="akshar">आ</div><div><h4>पारंपरिक पुजारी घराणे</h4><p> श्रीक्षेत्र निरगुडे येथील प्राचीन हनुमान मंदिराच्या पुजारी परंपरेचा वारसा.</p></div></div>
         <div class="cred"><div class="akshar">इ</div><div><h4>स्पष्ट व प्रामाणिक मार्गदर्शन</h4><p>प्रत्येक सेवेपूर्वी आवश्यक माहिती, पूजासाहित्य, प्रक्रिया आणि नियोजनाबाबत स्पष्ट मार्गदर्शन.</p></div></div>
-        <div class="cred"><div class="akshar">ई</div><div><h4>अचूक मुहूर्त मार्गदर्शन</h4><p>पंचांग, तिथी आणि नक्षत्रानुसार योग्य दिवस व वेळ निश्चित.</p></div></div>
+        <div class="cred"><div class="akshar">ई</div><div><h4>अचूक मुहूर्त मार्गदर्शन</h4><p>वैदिक पंचांगाचा सखोल अभ्यास करून आपल्या धार्मिक कार्यासाठी योग्य दिवस, वेळ आणि मुहूर्त निश्चित केला जातो.</p></div></div>
       </div>
     </div>
   </div>
@@ -295,34 +329,34 @@
 <section class="gallery" id="gallery">
   <div class="container">
     <div class="section-head">
-      <span class="eyebrow">सामग्री — प्रत्येक पूजाविधीतील पवित्र घटक</span>
-      <h2>प्रत्येक पूजाविधी श्रद्धा, शास्त्र आणि पवित्र घटकांच्या समन्वयातून पूर्णत्वास जातो.</h2>
-      <p>प्रत्येक पूजाविधीतील प्रत्येक घटकाचे वैदिक परंपरेत विशिष्ट स्थान आणि महत्त्व आहे. योग्य मंत्र, योग्य पूजासाहित्य आणि शास्त्रोक्त विधी यांचा समन्वय म्हणजे संपूर्ण पूजाविधी.</p>
+      <span class="eyebrow"> प्रत्येक पूजाविधीतील पवित्र सामग्री</span>
+      <h2>प्रत्येक पूजासामग्रीचे पूजाविधीत स्वतःचे धार्मिक महत्त्व आणि विशिष्ट उद्देश असतो.</h2>
+      <p>दीप, फुले, समिधा, अक्षता, हळद, कुंकू, कलश, तुळस, पंचामृत अशा प्रत्येक पूजासामग्रीचे शास्त्रात स्वतंत्र महत्त्व सांगितले आहे. अशा पवित्र पूजासामग्रीचा योग्य वापर आणि मंत्रोच्चार यांचा सुरेख संगम म्हणजेच परिपूर्ण पूजाविधी.</p>
     </div>
     <div class="strip">
       <div class="strip-item">
-        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/DiwaliOilLampCrop.JPG?width=600" alt="Diya, a clay oil lamp used in worship">
-        <div class="strip-cap"><b>दीप — दीप</b><span>दैवी प्रकाश, शुभारंभ आणि सकारात्मक ऊर्जेचे प्रतीक.</span></div>
+        <img src="img/lamp.JPG" alt="Diya, a clay oil lamp used in worship">
+        <div class="strip-cap"><b>दीप</b><span>अज्ञानाचा अंधकार दूर करून ज्ञान, मंगल आणि दैवी तेजाचे प्रतीक.  </span></div>
       </div>
       <div class="strip-item">
-        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Marigold_Flowers_in_India.jpg?width=600" alt="Marigold flowers used in Indian puja">
-        <div class="strip-cap"><b>गेंदा — पुष्प</b><span>श्रद्धा, भक्ती, पवित्रता आणि समर्पणाचे प्रतीक.</span></div>
+        <img src="img/flower.jpg" alt="Marigold flowers used in Indian puja">
+        <div class="strip-cap"><b>पुष्प</b><span>देवतांप्रती भक्ती, पवित्र भावना आणि समर्पण व्यक्त करणारे महत्त्वाचे पूजाद्रव्य.</span></div>
       </div>
       <div class="strip-item">
-        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Havan_kund_(_Fire_pit_).jpg?width=600" alt="Havan kund, a sacred fire pit used for yagna">
-        <div class="strip-cap"><b>हवन कुंड — यज्ञाग्नी</b><span>मंत्र, आहुती आणि ईश्वराशी आध्यात्मिक एकात्म साधणारे पवित्र माध्यम.</span></div>
+        <img src="img/havan.jpg" alt="Havan kund, a sacred fire pit used for yagna">
+        <div class="strip-cap"><b>हवन कुंड</b><span> वैदिक मंत्रोच्चारांसह अग्नीत आहुती अर्पण करण्यासाठीचे पवित्र माध्यम.</span></div>
       </div>
       <div class="strip-item">
-        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Rangoli_design.jpg?width=600" alt="Rangoli floor art made with coloured powder">
-        <div class="strip-cap"><b>रंगोली — रांगोळी</b><span>मंगल वातावरण, शुभत्व आणि दैवी स्वागताचे प्रतीक.</span></div>
+        <img src="img/Rangoli.jpg" alt="Rangoli floor art made with coloured powder">
+        <div class="strip-cap"><b>रांगोळी</b><span>मंगल वातावरण निर्मिती, शुभ ऊर्जा आणि देवतांच्या स्वागताचे पारंपरिक प्रतीक.</span></div>
       </div>
       <div class="strip-item">
-        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Lotus_flower_(978659).jpg?width=600" alt="Pink lotus flower, sacred in Hindu worship">
-        <div class="strip-cap"><b>कमल — कमळ</b><span>पावित्र्य, निर्मळता आणि दैवी चैतन्याचे प्रतीक.</span></div>
+        <img src="img/Lotus.jpg" alt="Pink lotus flower, sacred in Hindu worship">
+        <div class="strip-cap"><b>कमळ</b><span>निर्मळता, पावित्र्य आणि ईश्वरभक्तीचे प्रतीक.</span></div>
       </div>
       <div class="strip-item">
-        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Peacock_feather_close-up.jpg?width=600" alt="Peacock feather, associated with Lord Krishna">
-        <div class="strip-cap"><b>मोरपंख — मोरपीस</b><span>शुभता, संरक्षण, श्रीकृष्ण भक्ती आणि सात्त्विकतेचे प्रतीक.</span></div>
+        <img src="img/feather.jpg" alt="Peacock feather, associated with Lord Krishna">
+        <div class="strip-cap"><b>मोरपीस</b><span>शुभत्व, सात्त्विकता आणि श्रीकृष्ण भक्तीचे प्रतीक.  </span></div>
       </div>
     </div>
   </div>
@@ -333,24 +367,24 @@
     <div class="section-head">
       <span class="eyebrow">वेदकार्यच का?</span>
       <h2>प्रत्येक धार्मिक कार्यासाठी शास्त्राधारित सेवा, प्रामाणिक मार्गदर्शन आणि विश्वासाची साथ.</h2>
-      <p>प्रत्येक सेवा वैदिक शास्त्रांच्या आधारावर दिली जाते. कोणतीही अनावश्यक भीती, अंधश्रद्धा किंवा अवास्तव उपाय न सुचवता स्पष्ट आणि प्रामाणिक मार्गदर्शन केले जाते. </p>
+      <p>वेदकार्यच्या सर्व सेवा हिंदू धर्मशास्त्र, मान्यताप्राप्त ग्रंथ आणि वैदिक परंपरेवर आधारित आहेत. अनावश्यक भीती, अंधश्रद्धा किंवा अवास्तव उपायांऐवजी स्पष्ट, शास्त्राधारित आणि प्रामाणिक मार्गदर्शन दिले जाते.</p>
     </div>
     <div class="features-grid">
       <div class="feature">
         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3c-4 3-6 6-6 9a6 6 0 0012 0c0-3-2-6-6-9z"/></svg>
-        <h4>शास्त्राधारित मार्गदर्शन</h4><p>प्रत्येक पूजाविधी, धार्मिक संस्कार आणि ज्योतिष सेवा वैदिक शास्त्रांनुसार विधिवत आणि अचूक पद्धतीने केली जाते.</p>
+        <h4>शास्त्रोक्त पूजाविधी</h4><p>प्रत्येक पूजाविधी, धार्मिक कार्य, वैदिक संस्कार आणि ज्योतिष सेवा धर्मशास्त्र व परंपरेनुसार शास्त्रोक्त पद्धतीने संपन्न केली जाते. प्रत्येक विधीत शुद्धता, पावित्र्य आणि विधियुक्त परंपरेचे पालन केले जाते.</p>
       </div>
       <div class="feature">
         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12a8 8 0 1116 0 8 8 0 01-16 0z"/><path d="M12 8v4l3 2"/></svg>
-        <h4>अचूक मुहूर्त मार्गदर्शन</h4><p>पंचांग, तिथी, नक्षत्र, योग आणि करण यांचा विचार करून प्रत्येक शुभ कार्यासाठी योग्य मुहूर्त निश्चित केला जातो.</p>
+        <h4>अभ्यासपूर्ण कुंडली विश्लेषण</h4><p>तिथी, वार, नक्षत्र, योग आणि करण या पंचांगाचा सखोल अभ्यास करून प्रत्येक शुभ कार्यासाठी योग्य मुहूर्त निश्चित केला जातो. प्रत्येक निर्णय शास्त्रीय गणना आणि पंचांगाच्या आधारावर घेतला जातो.</p>
       </div>
       <div class="feature">
         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l2.5 6.5L21 11l-6.5 2.5L12 20l-2.5-6.5L3 11l6.5-2.5z"/></svg>
-        <h4>प्रामाणिक व पारदर्शक सल्ला</h4><p>प्रत्येक प्रश्नाचे स्पष्ट, वस्तुनिष्ठ आणि शास्त्राधारित मार्गदर्शन केले जाते. आवश्यक असेल तेव्हाच योग्य उपाय सुचवले जातात.</p>
+        <h4>प्रामाणिक व पारदर्शक सल्ला</h4><p>प्रत्येक प्रश्नाचे स्पष्ट, वस्तुनिष्ठ आणि शास्त्राधारित मार्गदर्शन केले जाते. आवश्यक असेल तेव्हाच योग्य उपाय सुचवले जातात. कोणतेही अवास्तव दावे किंवा अनावश्यक भीती निर्माण केली जात नाही.</p>
       </div>
       <div class="feature">
         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 20V10l8-6 8 6v10"/><path d="M9 20v-6h6v6"/></svg>
-        <h4>ऑनलाइन व प्रत्यक्ष सेवा</h4><p>भारत तसेच परदेशातील यजमानांसाठी ऑनलाइन सेवा आणि आवश्यकतेनुसार प्रत्यक्ष धार्मिक सेवा उपलब्ध.</p>
+        <h4>ऑनलाइन व प्रत्यक्ष सेवा</h4><p>भारत तसेच परदेशातील यजमानांसाठी ऑनलाइन व प्रत्यक्ष धार्मिक सेवा उपलब्ध आहेत. आवश्यकतेनुसार किंवा यजमानाच्या सोयीनुसार व्हिडिओ कॉलद्वारे पूजाविधीची सुविधाही दिली जाते.</p>
       </div>
     </div>
   </div>
@@ -359,34 +393,34 @@
 <section id="services">
   <div class="container">
     <div class="section-head">
-      <span class="eyebrow">सेवाएँ — आमच्या प्रमुख सेवा </span>
-      <h2>जीवनातील प्रत्येक शुभ कार्यासाठी विश्वासार्ह धार्मिक सेवा.</h2>
-      <p>पूजाविधी, वैदिक ज्योतिष आणि विशेष अनुष्ठाने — अनुभवी गुरुजींकडून ऑनलाईन तसेच प्रत्यक्ष सेवा उपलब्ध.</p>
+      <span class="eyebrow">आमच्या प्रमुख सेवा </span>
+      <h2>आयुष्यात प्रत्येक आनंदाच्या क्षणी देवाची आठवण होणे, हेच खरे भाग्य !</h2>
+      <p>पूजाविधी व ज्योतिष सेवा यांसह एकदा नक्की अनुभव घ्यावा अशी विशेष दैवी अनुष्ठाने व प्रभावी साधनादेखील उपलब्ध.</p>
     </div>
     <div class="svc-grid">
       <div class="svc-card">
-        <div class="svc-photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Rangoli_design.jpg?width=500" alt="Rangoli pattern"></div>
-        <div class="svc-body"><h4>श्री सत्यनारायण महापूजा</h4><p>घरातील शुभ कार्य, नवीन सुरुवात किंवा मनोकामना पूर्ण झाल्यानंतर केली जाणारी मंगलमय महापूजा.</p><a href="#booking">अधिक जाणून घ्या →</a></div>
+        <div class="svc-photo"><img src="img/सत्यनारायण.jpeg" alt="Rangoli pattern"></div>
+        <div class="svc-body"><h4>श्री सत्यनारायण महापूजा</h4><p>घरातील कोणतेही शुभ कार्य, नवीन सुरुवात किंवा मनातील इच्छा पूर्ण व्हाव्यात यासाठी प्रत्येक पौर्णिमेला आवर्जून करावी, अशी विशेष महापूजा.</p><a href="#booking">अधिक जाणून घ्या →</a></div>
       </div>
       <div class="svc-card">
-        <div class="svc-photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Madurai_Meenakshi_Amman_Temple_Gopuram.jpg?width=500" alt="Temple architecture"></div>
-        <div class="svc-body"><h4>गृहप्रवेश व वास्तुशांती</h4><p>नवीन घर, फ्लॅट, बंगला, कार्यालय किंवा दुकानात प्रवेश करण्यापूर्वी केला जाणारा शुभ पूजाविधी.</p><a href="#booking">अधिक जाणून घ्या →</a></div>
+        <div class="svc-photo"><img src="img/वास्तुशांति.jpeg" alt="Temple architecture"></div>
+        <div class="svc-body"><h4>गृहप्रवेश व वास्तुशांती</h4><p>नवीन घर किंवा बंगला बांधल्यानंतर किंवा फ्लॅट घेतल्यानंतर त्यात राहायला जाण्यापूर्वी केला जाणारा अतिशय महत्त्वाचा विधी.</p><a href="#booking">अधिक जाणून घ्या →</a></div>
       </div>
       <div class="svc-card">
-        <div class="svc-photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/DiwaliOilLampCrop.JPG?width=500" alt="Lit diya lamp"></div>
-        <div class="svc-body"><h4>जन्मकुंडली विश्लेषण</h4><p>विवाह, करिअर, व्यवसाय, शिक्षण किंवा इतर महत्त्वाचे निर्णय घेण्यापूर्वी आवश्यक ज्योतिषीय विश्लेषण.</p><a href="#booking">अधिक जाणून घ्या →</a></div>
+        <div class="svc-photo"><img src="img/कुंडली विश्लेषण.jpeg" alt="Lit diya lamp"></div>
+        <div class="svc-body"><h4>जन्मकुंडली विश्लेषण</h4><p>विवाह, करिअर, व्यवसाय, शिक्षण किंवा इतर महत्त्वाचे निर्णय घेण्यापूर्वी आवश्यक असलेले ज्योतिष मार्गदर्शन.</p><a href="#booking">अधिक जाणून घ्या →</a></div>
       </div>
       <div class="svc-card">
-        <div class="svc-photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Lotus_flower_(978659).jpg?width=500" alt="Lotus flower"></div>
-        <div class="svc-body"><h4>रत्न व रुद्राक्ष मार्गदर्शन</h4><p>जन्मकुंडलीनुसार योग्य रत्न किंवा रुद्राक्ष निवडीसाठी तज्ज्ञ मार्गदर्शन.</p><a href="#booking">अधिक जाणून घ्या →</a></div>
+        <div class="svc-photo"><img src="img/रत्न आणि रुद्राक्ष सल्ला.jpeg" alt="Lotus flower"></div>
+        <div class="svc-body"><h4>रत्न व रुद्राक्ष मार्गदर्शन</h4><p>स्वतःची जन्मकुंडली तज्ञ ज्योतिषाकडून व्यवस्थितपणे तपासून घेऊन, त्यानुसारच योग्य ते रत्न किंवा रुद्राक्ष धारण करणे अत्यंत गरजेचे असते.</p><a href="#booking">अधिक जाणून घ्या →</a></div>
       </div>
       <div class="svc-card">
-        <div class="svc-photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Havan_kund_(_Fire_pit_).jpg?width=500" alt="Havan fire pit"></div>
-        <div class="svc-body"><h4>शाबरी कवच साधना</h4><p>नकारात्मक शक्तींचा प्रभाव दूर करून आध्यात्मिक संरक्षण मिळवण्यासाठी केले जाणारे विशेष अनुष्ठान.</p><a href="#booking">अधिक जाणून घ्या →</a></div>
+        <div class="svc-photo"><img src="img/शाबरी कवच.jpeg" alt="Havan fire pit"></div>
+        <div class="svc-body"><h4>शाबरी कवच साधना</h4><p>वाईट किंवा नकारात्मक शक्तींचा प्रभाव दूर करून आध्यात्मिक संरक्षण मिळवण्यासाठी केले जाणारे विशेष अनुष्ठान.</p><a href="#booking">अधिक जाणून घ्या →</a></div>
       </div>
       <div class="svc-card">
-        <div class="svc-photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Marigold_Flowers_in_India.jpg?width=500" alt="Marigold flowers"></div>
-        <div class="svc-body"><h4>श्री महामृत्युंजय जप अनुष्ठान</h4><p>गंभीर आजार, आरोग्याच्या अडचणी किंवा दीर्घायुष्याच्या मंगलकामनेसाठी केले जाणारे वैदिक अनुष्ठान.</p><a href="#booking">अधिक जाणून घ्या →</a></div>
+        <div class="svc-photo"><img src="img/श्री महामृत्युंजय जप अनुष्ठान.jpeg" alt="Marigold flowers"></div>
+        <div class="svc-body"><h4>श्री महामृत्युंजय जप अनुष्ठान</h4><p>एखादा गंभीर शारीरिक किंवा मानसिक आजार असताना वैद्यकीय उपचारांसोबतच करा, विशेष दैवी अनुष्ठान.</p><a href="#booking">अधिक जाणून घ्या →</a></div>
       </div>
     </div>
   </div>
@@ -395,15 +429,15 @@
 <section id="process">
   <div class="container">
     <div class="section-head">
-      <span class="eyebrow">सेवा बुकिंग प्रक्रिया</span>
-      <h2>वेदकार्यची सेवा बुक करण्याच्या चार सोप्या पायऱ्या</h2>
-      <p>हे वाक्य पूर्णपणे काढून टाका. कोणताही पर्याय देऊ नका.</p>
+      <span class="eyebrow">वेदकार्य सेवा बुकिंग प्रक्रिया</span>
+      <h2>वेदकार्य मार्फत पूजासेवा / ज्योतिष सेवा बुक करण्याच्या चार सोप्या पायऱ्या</h2>
+      <p> संपर्क करा – माहिती द्या – सेवा बुकिंग – सेवा संपन्न</p>
     </div>
     <div class="process-grid">
-      <div class="p-step"><div class="num">01</div><h4>संपर्क करा</h4><p>फोन, व्हॉट्सॲप मेसेज किंवा बुकिंग फॉर्म यांद्वारे संपर्क साधा किंवा प्रत्यक्ष भेट घ्या.</p></div>
-      <div class="p-step"><div class="num">02</div><h4>आवश्यक माहिती</h4><p>धार्मिक पूजाविधी निश्चित करण्यासाठी पूजाविधीचा प्रकार, विधी केव्हा आणि कोणत्या ठिकाणी करावयाचा आहे इत्यादी प्राथमिक माहिती द्या. ज्योतिष मार्गदर्शन हवे असल्यास संबंधित व्यक्तीची जन्मतारीख, जन्मवेळ आणि जन्मठिकाण यांविषयी माहिती द्या.</p></div>
-      <div class="p-step"><div class="num">03</div><h4>सेवा बुकिंग निश्चिती</h4><p>आपण निवडलेला पूजाविधी प्रकार किंवा ज्योतिष मार्गदर्शन, उपलब्ध मुहूर्त इत्यादी बाबींवर चर्चा करून आवश्यक ती सेवा बुकिंग दक्षिणा भरून पूजाविधी किंवा ज्योतिष मार्गदर्शन सेवा निश्चित करा. सेवेसंबंधी आवश्यक ती इतर सर्व माहिती जाणून घ्या आणि निश्चिंत व्हा.</p></div>
-      <div class="p-step"><div class="num">04</div><h4>सेवा संपन्न</h4><p>आपण निवडलेल्या सेवेनुसार आवश्यक मार्गदर्शन, पूजासाहित्य, मुहूर्त, प्रक्रिया आणि पूर्वतयारीची संपूर्ण माहिती वेळोवेळी देण्यात येते. ठरलेल्या दिवशी शुभ मुहूर्तावर आपला पूजाविधी वेदकार्यमार्फत विधिवत पार पाडला जातो किंवा आवश्यक ते ज्योतिष मार्गदर्शन सखोल व अत्यंत सोप्या भाषेत करण्यात येते.</p></div>
+      <div class="p-step"><div class="num">01</div><h4>संपर्क करा</h4><p>फोन, व्हॉट्सॲप मेसेज किंवा ऑनलाईन बुकिंग फॉर्मद्वारे वेदकार्यशी संपर्क साधा. आवश्यकतेनुसार व्यक्तीशः भेट घ्यायची असल्यास अगोदर फोन करून गुरुजींची उपलब्धता निश्चित करा आणि त्यानंतरच प्रत्यक्ष भेट द्या.</p></div>
+      <div class="p-step"><div class="num">02</div><h4>माहिती द्या</h4><p>पूजाविधी बुक करण्यासाठी कोणाची पूजा आहे, तारीख, स्वतःचे नाव, ठिकाण (लोकेशन) इत्यादी प्राथमिक माहिती द्या. ज्योतिष सेवेसाठी संबंधित व्यक्तीची जन्मतारीख, जन्मवेळ आणि जन्मठिकाणाची माहिती द्या.</p></div>
+      <div class="p-step"><div class="num">03</div><h4> सेवा बुकिंग</h4><p>पूजा किंवा ज्योतिष सेवा निवडल्यानंतर शुभमुहूर्त, गुरुजींची उपलब्धता, पूजासाहित्य, ब्राह्मण दक्षिणा आणि आवश्यक बाबींवर चर्चा करून आगाऊ रक्कम भरल्यानंतर सेवा बुकिंग निश्चित केली जाईल.</p></div>
+      <div class="p-step"><div class="num">04</div><h4>सेवा संपन्न</h4><p>ठरलेल्या दिवशी शुभ मुहूर्तावर पूजाविधी विधिवत संपन्न केला जाईल किंवा आवश्यक ज्योतिष सेवा दिली जाईल. संपूर्ण विधी शास्त्रोक्त पद्धतीने पार पाडला जाईल व आवश्यक माहिती आणि मार्गदर्शन वेळोवेळी दिले जाईल.</p></div>
     </div>
   </div>
 </section>
@@ -411,13 +445,13 @@
 <section id="testimonials" style="background-color: var(--sandstone-2);">
   <div class="container">
     <div class="section-head">
-      <span class="eyebrow">यजमान कहते हैं — यजमानांचे मनोगत</span>
-      <h2>वेदकार्यच्या सेवांबद्दल यजमानांनी व्यक्त केलेले काही अनुभव.</h2>
+      <span class="eyebrow">यजमानांचे मनोगत</span>
+      <h2>वेदकार्य सेवांबाबत यजमानांच्या प्रतिक्रिया.</h2>
     </div>
     <div class="test-grid">
-      <div class="test-card"><span class="quote-mark">"</span><p>विवाहाची पूजा अगदी वेळेवर आणि शांतपणे झाली. प्रत्येक विधीचा अर्थही समजावून सांगितला. त्यामुळे संपूर्ण कार्यक्रम मनासारखा पार पडला.</p><div class="test-foot"><div class="avatar-dot"></div><div><b>मीरा व संजय कुलकर्णी</b><span>पुणे</span></div></div></div>
-      <div class="test-card"><span class="quote-mark">"</span><p>ऑनलाईन पूजेसाठी आवश्यक सर्व सूचना वेळेवर मिळाल्या. संपूर्ण विधी अतिशय सहज आणि शास्त्रोक्त पद्धतीने पार पडला. प्रत्यक्ष उपस्थित असल्यासारखाच अनुभव आला.</p><div class="test-foot"><div class="avatar-dot"></div><div><b>रवी तिवारी</b><span>बाणेर</span></div></div></div>
-      <div class="test-card"><span class="quote-mark">"</span><p>पत्रिका समजावून सांगताना प्रत्येक गोष्ट सोप्या भाषेत सांगितली. शंका विचारल्या तेव्हा संयमाने उत्तरे मिळाली. मार्गदर्शन उपयुक्त वाटले.</p><div class="test-foot"><div class="avatar-dot"></div><div><b>अनन्या देशपांडे</b><span>कोथरूड</span></div></div></div>
+      <div class="test-card"><span class="quote-mark">"</span><p>सत्यनारायण महापूजा अतिशय विधियुक्त आणि शांत वातावरणात पार पडली. प्रत्येक विधीचे महत्त्व सोप्या भाषेत समजावून सांगितल्यामुळे पूजेत सहभागी होण्याचा आनंद द्विगुणित झाला. संपूर्ण अनुभव अत्यंत समाधानकारक होता.</p><div class="test-foot"><div class="avatar-dot"></div><div><b>मीरा व संजय कुलकर्णी</b><span>पुणे</span></div></div></div>
+      <div class="test-card"><span class="quote-mark">"</span><p>प्रत्यक्ष पूजा करून घेणे आम्हाला शक्य नसल्यामुळे आम्ही ऑनलाइन पूजेचा पर्याय निवडला. आवश्यक सूचना आणि संपूर्ण माहिती वेळेवर मिळाली. अगदी प्रत्यक्ष पूजेत उपस्थित असल्यासारखा अनुभव आला.</p><div class="test-foot"><div class="avatar-dot"></div><div><b>रवी तिवारी</b><span>बाणेर</span></div></div></div>
+      <div class="test-card"><span class="quote-mark">"</span><p>जन्मकुंडलीचे विश्लेषण अतिशय सखोल आणि स्पष्ट पद्धतीने करून सांगितले. कोणतीही अनावश्यक भीती न दाखवता योग्य मार्ग, योग्य उपाय आणि प्रत्येक गोष्टीमागील कारण समजावून सांगितल्यामुळे पूर्ण विश्वास वाटला</p><div class="test-foot"><div class="avatar-dot"></div><div><b>अनन्या देशपांडे</b><span>कोथरूड</span></div></div></div>
     </div>
   </div>
 </section>
@@ -441,13 +475,75 @@
   <div class="container">
     <div class="foot-grid">
       <div>
-        <div class="brand" style="font-size:1.2rem;"><span class="om">ॐ</span> वेदकार्य</div>
+        <div class="brand" style="font-size:1.2rem;"> वेदकार्य- प्रशांत राक्षे (गुरुजी) </div>
         <p class="desc">प्रामाणिक सेवा, शास्त्रनिष्ठ परंपरा आणि अनुभवी मार्गदर्शन — आपल्या प्रत्येक शुभ कार्यासाठी विश्वासार्ह वैदिक सेवा.</p>
       </div>
-      <div><h4>वेदकार्य सेवा</h4><ul><li><a href="#services">वास्तुशांती</a></li><li><a href="#services">होम-हवन</a></li><li><a href="#services">जन्मकुंडली विश्लेषण</a></li><li><a href="#services">नवग्रहशांती</a></li></ul></div>
-      <div><h4>माहिती</h4><ul><li><a href="#about">आमच्याविषयी</a></li><li><a href="#process">सेवा बुकिंग प्रक्रिया</a></li><li><a href="#testimonials">यजमानांचे मनोगत</a></li><li><a href="#faq">ब्लॉग</a></li></ul></div>
-      <div><h4>संपर्क</h4><ul><li>+९१ ९७६६० ८९९१०</li><li>*info.vedkarya@gmail.com</li><li>आय-४०४, कुबेर आंगण,कोल्हे मळा, जुन्नर-ओझर रोड,नारायणगाव, ता. जुन्नर,जि. पुणे - ४१०५०४</li></ul></div>
+      <div><h4>वेदकार्य सेवा</h4><ul><li><a href="#services">वास्तुशांति</a></li><li><a href="#services">होम-हवन</a></li><li><a href="#services">जन्मकुंडली विश्लेषण</a></li><li><a href="#services">नवग्रहशांति</a></li></ul></div>
+      <div><h4>माहिती</h4><ul><li><a href="#about">आमच्याविषयी</a></li><li><a href="#process">सेवा बुकिंग प्रक्रिया</a></li><li><a href="#testimonials">सामान्य प्रश्न </a></li><li><a href="#faq">वेदकार्य ब्लॉग </a></li></ul></div>
+      <div><h4>आजच संपर्क करा</h4><ul><li>९७६६०८९९१०</li><li>info.vedkarya@gmail.com</li><li>आय-४०४, कुबेर आंगण,कोल्हे मळा, जुन्नर-ओझर रोड,नारायणगाव, ता. जुन्नर,जि. पुणे - ४१०५०४</li></ul></div>
     </div>
+
+    <div class="container">
+  <h1 style="color:var(--gold-light)" >चौकशी अर्ज</h1>
+  <form target="_blank" action="https://formsubmit.co/info.vedkarya@gmail.com" method="POST">
+    <div class="form-group">
+      <div class="form-row">
+        <div class="col">
+          <input type="text" name="name" class="form-control input-box" placeholder="संपूर्ण नाव" required>
+        </div>
+        <div class="col">
+          <input type="tel" name="mobile-no" class="form-control input-box" placeholder="मोबाईल क्रमांक" required>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="form-row">
+        <div class="col">
+          <input type="email" name="email" class="form-control input-box" placeholder="ई-मेल आय डी ">
+        </div>
+        <div class="col">
+          <input type="text" name="services" class="form-control input-box" placeholder="अपेक्षित पूजासेवा /ज्योतिष मार्गदर्शन" required>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="form-row">
+        <div class="col">
+          <input type="date" name="date" class="form-control input-box" placeholder="अपेक्षित तारीख" required>
+        </div>
+        <div class="col">
+          <input type="text" name="location" class="form-control input-box" placeholder="कार्यक्रमाचे ठिकाण" required>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <textarea placeholder="सविस्तर माहिती/ मेसेज" class="form-control input-box" name="message" rows="10" required></textarea>
+    </div>
+    <button type="submit" class="input-box" style="background-color: var(--gold)">Submit Form</button>
+  </form>
+</div>
+
+  <div class="social-icons">
+        <a href="https://www.instagram.com/vedkarya/" target="_blank">
+            <img src="img/instagram.png" alt="Instagram">
+        </a>
+
+        <a href="https://youtube.com/@vedkarya?si=MP58J-70SHMLLnqs" target="_blank">
+            <img src="img/youtube.png" alt="YouTube">
+        </a>
+
+        <a href="https://www.facebook.com/share/1BWJK3S3Xj/" target="_blank">
+            <img src="img/facebook.png" alt="Facebook">
+        </a>
+
+        <a href="https://wa.me/message/4AJKTFVYL3LIL1" target="_blank">
+            <img src="img/WhatsApp_icon.png" alt="Facebook">
+        </a>
+
+        <a href="https://maps.app.goo.gl/S79dzvJSmDeaPs3n6" target="_blank">
+            <img src="img/Google_Maps_icon_(2026).svg" alt="Facebook">
+        </a>
+  </div>
     <div class="foot-bottom">
       <span>© २०२६ वेदकार्य. सर्व हक्क राखीव.</span>
       <span>श्रद्धा • शास्त्र • विश्वास</span>

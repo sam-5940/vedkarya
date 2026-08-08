@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vedkarya - Prashant Rakshe</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Mukta:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+  :root{
+    --sandstone:#F1E6CC;
+    --sandstone-2:#E7D8B4;
+    --ink:#2B1B12;
+    --terracotta:#9A4B1F;
+    --maroon:#5C1A1A;
+    --gold:#C79A3D;
+    --gold-light:#E4C777;
+    --mist:#5c4a38;
+    --line: rgba(154,75,31,0.28);
+    --display:'Marcellus','Noto Sans Devanagari',serif;
+    --body:'Mukta','Noto Sans Devanagari',sans-serif;
+    --shadow: 0 24px 60px rgba(43,27,18,0.28);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;background:var(--sandstone);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.65;}
+  img{max-width:100%;display:block;object-fit:cover;}
+  a{color:inherit;text-decoration:none;}
+  h1,h2,h3,h4{font-family:var(--display);font-weight:400;margin:0;color:var(--maroon);}
+  .container{max-width:1180px;margin:0 auto;padding:0 28px;}
+  .eyebrow{display:inline-flex;align-items:center;gap:10px;font-family:var(--body);font-weight:700;letter-spacing:.16em;text-transform:uppercase;font-size:.74rem;color:var(--terracotta);}
+  .eyebrow::before,.eyebrow::after{content:"";width:20px;height:1px;background:var(--terracotta);opacity:.7;}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 30px;border-radius:2px;font-family:var(--body);font-weight:600;font-size:.94rem;letter-spacing:.02em;cursor:pointer;border:1px solid transparent;transition:transform .25s ease, box-shadow .25s ease;}
+  .btn-primary{background:linear-gradient(135deg,var(--terracotta),#6e3210);color:#fff3e6;box-shadow:0 12px 28px rgba(154,75,31,.35);}
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 16px 34px rgba(154,75,31,.45);}
+  .btn-ghost{border-color:var(--gold);color:#fff;background:rgba(255,255,255,.08);}
+  .btn-ghost:hover{background:rgba(255,255,255,.18);}
+  .btn-ghost.dark{color:var(--maroon);border-color:var(--terracotta);background:transparent;}
+  .btn-ghost.dark:hover{background:rgba(154,75,31,.08);}
+
+  .topbar{background:var(--maroon);color:var(--gold-light);font-size:.8rem;}
+  .topbar .container{display:flex;justify-content:space-between;padding:8px 28px;}
+
+  header.nav{position:sticky;top:0;z-index:50;background:rgba(241,230,204,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);}
+  .nav .container{display:flex;align-items:center;justify-content:space-between;padding:14px 5px;}
+  .brand{display:flex;align-items:center;gap:10px;font-family:var(--display);font-size:1.25rem;color:var(--maroon);}
+  .brand .om{color:var(--terracotta);font-size:1.4rem;}
+  .navlinks{display:flex;gap:30px;font-weight:600;font-size:.9rem;}
+  .navlinks a{position:relative;padding:4px 0;}
+  .navlinks a::after{content:"";position:absolute;left:0;bottom:-2px;width:0;height:2px;background:var(--terracotta);transition:width .25s ease;}
+  .navlinks a:hover::after{width:100%;}
+  .menu-toggle{display:none;background:none;border:none;font-size:1.5rem;color:var(--maroon);cursor:pointer;}
+
+  /* -------- about -------- */
+  .about{min-height: 650px; width: 100%; display: flex; align-items: center; justify-content: center;background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),url(img/Rangoli.jpg);background-size: fill;background-position: center;background-repeat: no-repeat;}
+  .about .row{width: 80%;}
+  .image-container{border-radius: 30px ;border: 10px solid var(--maroon); height: 100%; width: 100%; margin: 10px;overflow: hidden;}
+  .image-container img {height: 100%; width: 100%;object-fit: cover;object-position: center;display: block;}
+  
+  .member{min-height: 650px; display: flex; align-items: center; justify-content: center;background-color: var(--sandstone-2  );}
+  .member .row{width: 80%;}
+  .image-container-member{border-radius: 4px ;border: 4px solid var(--gold); height: 400px; width: 300px; margin: 20px;overflow: hidden;}
+  .image-container-member img {height: 100%; width: 100%;object-fit: cover;object-position: center;display: block;}
+
+  .member-name{display:flex;align-items:center;gap:10px;font-family:var(--display);font-size:4rem;color:var(--maroon);margin: 50px; }
+  .experience-text{display:flex;align-items:center;gap:10px;font-family:var(--display);font-size:1.3rem;color:var(--gold);}
+  .description{display:flex;align-items:center;gap:10px;font-family:var(--display);font-size:1.3rem;color:var(--ink);margin: 30px;}
+
+  /* ---------- Footer ---------- */
+  footer{background:var(--ink);color:#cbb99a;padding:64px 0 24px;}
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:40px;}
+  footer h4{font-family:var(--body);color:var(--gold-light);font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:16px;}
+  footer .brand{color:var(--gold-light);}
+  footer p.desc{font-size:.86rem;margin-top:14px;color:#b5a688;max-width:280px;}
+  footer ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;font-size:.9rem;}
+  footer ul a:hover{color:var(--gold-light);}
+  .foot-bottom{border-top:1px solid rgba(199,154,61,.25);margin-top:48px;padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.78rem;color:#8a7a5e;}
+
+  .social-icons{display:flex;justify-content:center;align-items:center;gap:7px;margin-top:20px;}
+  .social-icons a{display:flex;align-items:center;justify-content:center;}
+  .social-icons img{width:32px;height:32px;display:block;transition:transform .3s ease;}
+  .social-icons img:hover{transform:scale(1.1);}
+
+  .logo {border: 3px solid var(--maroon);border-radius: 50%;height: 70px;width: 70px;overflow: hidden;}
+  .logo img {transform: scale(1.25); width: 100%;height: 100%;object-fit: contain;display: block;}
+
+  .input-box{
+    background-color: var(--sandstone-2);border-radius: 5px;border: #2B1B12;
+  }
+
+  @media (max-width:960px){
+    .about .container, .booking .container{grid-template-columns:1fr;}
+    .features-grid, .svc-grid{grid-template-columns:repeat(2,1fr);}
+    .process-grid{grid-template-columns:repeat(2,1fr);row-gap:40px;}
+    .process-grid::before{display:none;}
+    .test-grid{grid-template-columns:1fr;}
+    .foot-grid{grid-template-columns:1fr 1fr;}
+    .hero{min-height:560px;}
+  }
+  @media (max-width:720px){
+    .navlinks{display:none;}
+    .menu-toggle{display:block;}
+    .features-grid, .svc-grid{grid-template-columns:1fr;}
+    .creds{grid-template-columns:1fr;}
+    .foot-grid{grid-template-columns:1fr;}
+    .topbar .container{flex-direction:column;gap:4px;padding:8px 20px;}
+    .strip-item{flex-basis:210px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <span style="color: #5C1A1A; background-color: #FFF3CD; padding: 2px 6px; border-radius: 4px;"">📞 ९७६६०८९९१० </span>
+    <span>आय-४०४, कुबेर आंगण,कोल्हे मळा, जुन्नर-ओझर रोड,नारायणगाव, ता. जुन्नर,जि. पुणे - ४१०५०४</span>
+    <span>दररोज • सकाळी ९:०० ते संध्याकाळी ६:००</span>
+  </div>
+</div>
+
+<header class="nav">
+  <div class="container">
+    <div class="logo_holder">
+      <div class="logo">
+        <img src="img/logo.jpeg" alt="img_error" style="width: 100%; height: 100%; object-fit: cover;">
+      </div>
+    </div>
+    <div class="brand" style="padding-left: 40px;">वेदकार्य- राक्षे गुरुजी</div>
+    <nav class="navlinks">
+      <a href="#about"> मुख्यपृष्ठ</a>
+      <a href="#gallery">आमच्याविषयी</a>
+      <a href="#services">पूजाविधी</a>
+      <a href="#process">ज्योतिष</a>
+      <a href="#testimonials">अनुष्ठान</a>
+      <a href="#faq">गॅलरी</a>
+      <a href="#about">ब्लॉग</a>
+      <a href="#gallery">प्रश्नोत्तरे</a>
+      <a href="#services">दान-दक्षिणा</a>
+      <a href="#process">संपर्क</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:18px;">
+      <button class="menu-toggle" aria-label="menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<div class="about">
+  <div class="row">
+    <div class="col-md-4 d-flex justify-content-center">
+      <div class="image-container"><img src="img/logo.jpeg" alt="not found"></div>
+    </div>
+    <div class="col-md-8"></div>
+  </div>
+</div>
+
+<div class="member">
+  <div class="row">
+    <div class="col-md-4 d-flex justify-content-center">
+      <div class="image-container-member"><img src="img/kalash.jpeg" alt="not found"></div>
+    </div>
+    <div class="col-md-8">
+      <p class="member-name">name</p>
+      <div class="row">
+        <div class="col-md-4"><div class="container"><div class="col-md-6 d-flex justify-content-center experience-text">completed poojas</div><div class="col-md-6 d-flex justify-content-center experience-text">xx</div></div></div>
+        <div class="col-md-4"><div class="container"><div class="col-md-6 d-flex justify-content-center experience-text">completed poojas</div><div class="col-md-6 d-flex justify-content-center experience-text">xx</div></div></div>
+        <div class="col-md-4"><div class="container"><div class="col-md-6 d-flex justify-content-center experience-text">completed poojas</div><div class="col-md-6 d-flex justify-content-center experience-text">xx</div></div></div>
+      </div>
+      <p class="description"> sample text sample text sample text sample text sample text sample text sample text sample text </p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <div class="brand" style="font-size:1.2rem;"> वेदकार्य- राक्षे गुरुजी </div>
+        <p class="desc">प्रामाणिक सेवा, शास्त्रनिष्ठ परंपरा आणि अनुभवी मार्गदर्शन — आपल्या प्रत्येक शुभ कार्यासाठी विश्वासार्ह वैदिक सेवा.</p>
+      </div>
+      <div><h4>वेदकार्य सेवा</h4><ul><li><a href="#services">वास्तुशांति</a></li><li><a href="#services">होम-हवन</a></li><li><a href="#services">जन्मकुंडली विश्लेषण</a></li><li><a href="#services">नवग्रहशांति</a></li></ul></div>
+      <div><h4>माहिती</h4><ul><li><a href="#about">आमच्याविषयी</a></li><li><a href="#process">सेवा बुकिंग प्रक्रिया</a></li><li><a href="#testimonials">सामान्य प्रश्न </a></li><li><a href="#faq">वेदकार्य ब्लॉग </a></li></ul></div>
+      <div><h4>आजच संपर्क करा</h4><ul><li>९७६६०८९९१०</li><li>info.vedkarya@gmail.com</li><li>आय-४०४, कुबेर आंगण,कोल्हे मळा, जुन्नर-ओझर रोड,नारायणगाव, ता. जुन्नर,जि. पुणे - ४१०५०४</li></ul></div>
+    </div>
+
+    <div class="container">
+  <h1 style="color:var(--gold-light)" >सेवा बुकिंग</h1>
+  <form target="_blank" action="https://formsubmit.co/c4c67161df215be4f3bf9a49c564b694" method="POST">
+    <div class="form-group">
+      <div class="form-row">
+        <div class="col">
+          <input type="text" name="name" class="form-control input-box" placeholder="संपूर्ण नाव" required>
+        </div>
+        <div class="col">
+          <input type="tel" name="mobile-no" class="form-control input-box" placeholder="मोबाईल क्रमांक" required>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="form-row">
+        <div class="col">
+          <input type="email" name="email" class="form-control input-box" placeholder="ई-मेल आय डी ">
+        </div>
+        <div class="col">
+          <input type="text" name="services" class="form-control input-box" placeholder="अपेक्षित पूजासेवा /ज्योतिष मार्गदर्शन" >
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="form-row">
+        <div class="col">
+          <input type="date" name="date" class="form-control input-box" placeholder="अपेक्षित तारीख" >
+        </div>
+        <div class="col">
+          <input type="text" name="location" class="form-control input-box" placeholder="कार्यक्रमाचे ठिकाण" >
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <textarea placeholder="सविस्तर माहिती/ मेसेज" class="form-control input-box" name="message" rows="10" ></textarea>
+    </div>
+    <button type="submit" class="input-box" style="background-color: var(--gold)">Submit Form</button>
+  </form>
+</div>
+
+  <div class="social-icons">
+        <a href="https://www.instagram.com/vedkarya/" target="_blank">
+            <img src="img/instagram.png" alt="Instagram">
+        </a>
+
+        <a href="https://youtube.com/@vedkarya?si=MP58J-70SHMLLnqs" target="_blank">
+            <img src="img/youtube.png" alt="YouTube">
+        </a>
+
+        <a href="https://www.facebook.com/share/1BWJK3S3Xj/" target="_blank">
+            <img src="img/facebook.png" alt="Facebook">
+        </a>
+
+        <a href="https://wa.me/message/4AJKTFVYL3LIL1" target="_blank">
+            <img src="img/WhatsApp_icon.png" alt="Facebook">
+        </a>
+
+        <a href="https://maps.app.goo.gl/S79dzvJSmDeaPs3n6" target="_blank">
+            <img src="img/Google_Maps_icon_(2026).svg" alt="Facebook">
+        </a>
+  </div>
+    <div class="foot-bottom">
+      <span>© २०२६ वेदकार्य. सर्व हक्क राखीव.</span>
+      <span>श्रद्धा • शास्त्र • विश्वास</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.menu-toggle').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      const links=document.querySelector('.navlinks');
+      const show = links.style.display!=='flex';
+      links.style.display = show ? 'flex' : 'none';
+      links.style.flexDirection='column';
+      links.style.position='absolute';
+      links.style.top='58px';
+      links.style.left='0';
+      links.style.right='0';
+      links.style.background='#F1E6CC';
+      links.style.padding='20px 28px';
+      links.style.borderBottom='1px solid rgba(154,75,31,0.28)';
+    });
+  });
+</script>
+</body>
+</html>
